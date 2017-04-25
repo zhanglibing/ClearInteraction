@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生产加工</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+<div class="box">
+    <div class="contain">
+        <div class="left">
+            <ul class="location">
+                <li><b></b><p>牙列状态</p></li>
+                <li><b></b><p>附件粘接</p></li>
+                <li><b></b><p>邻面去釉</p></li>
+                <li><b></b><p>合面调整</p></li>
+                <li><b></b><p>颌位牵引</p></li>
+                <li><b class="active"></b><p>生产加工</p></li>
+            </ul>
+        </div>
+        <div class="main1 ff" state="7">
+            <ul class="title cow ">
+                <li class="col d-2">病例编号</li>
+                <li class="col d-2">201602120006</li>
+                <li class="col d-2">患者姓名</li>
+                <li class="col d-2">小铁铁</li>
+                <li class="col d-2">临床医生</li>
+                <li class="col d-2">大铁铁</li>
+            </ul>
+            <div class="contain-box">
+                <ul class="contain1">
+                    <li class="col d-2 ">生产批次</li>
+                    <li class="col d-4 ProcessBatchNo">M01</li>
+                    <li class="col d-3">到期日期</li>
+                    <li class="col d-3 right-no ExpireDate">2017年12月12日</li>
+                    <li class="col d-2 bottom-no">
+                        <ul>
+                            <li >&nbsp;</li>
+                            <li>上颌</li>
+                            <li>下颌</li>
+                            <li class="b">型号</li>
+                        </ul>
+                    </li>
+
+                    <li class="col d-4 bottom-no">
+                        <ul class="correct">
+                            <li>矫治器（-A）</li>
+                            <li>从 <input type="text" name="MaxillaryStepFrom" class="xiao"> 步(含)至<input type="text" name="MaxillaryStepTo" class="xiao">步(含)</li>
+                            <li>从<input type="text" name="MandibleStepFrom" class="xiao">步(含)至<input type="text" name="MandibleStepTo" class="xiao">步(含)</li>
+                            <li class="b model">
+                                <p class="col d-6"><input type="checkbox" name="ModeNumber" value="CM-I-R-050" />CM-I-R-050 </p>
+                                <p class="col d-6"><input type="checkbox" name="ModeNumber" value=" CM-I-R-625" /> CM-I-R-625 </p>
+                                <p class="col d-6"><input type="checkbox" name="ModeNumber" value="CM-I-R-750" />CM-I-R-750 </p>
+                                <p class="col d-6"><input type="checkbox" name="ModeNumber" value="CM-I-R-100" />CM-I-R-100 </p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col d-3 bottom-no">
+                        <ul class="keep">
+                            <li>保持器（-R）</li>
+                            <li>第<input type="text" name="MaxillaryStep" value="" class="da">步 </li>
+                            <li>第<input type="text" name="MandibleStep" value="" class="da">步 </li>
+                            <li class="b model">
+                                <p><input type="checkbox"  name="ModeNumber" value="CM-I-R-050" />CM-I-R-050 </p>
+                                <p><input type="checkbox" name="ModeNumber" value="CM-I-R-100" />CM-I-R-100</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col d-3 right-no bottom-no">
+                        <ul class="template">
+                            <li>模版（-T）</li>
+                            <li>第<input type="text" name="MaxillaryStep" value="" class="da">步 </li>
+                            <li>第<input type="text" name="MandibleStep" value="" class="da">步 </li>
+                            <li class="b model">
+                                <p><input type="checkbox" name="ModeNumber" value="CM-I-R-050" />CM-I-R-050 </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="add"></div>
+            <div class="guide">
+                <div class="next btnG pageBtn">完成</div>
+                <div class="back btnG pageBtn">上一步</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <p>加工单</p>
+                <p>操作页面</p>
+                <p>Processing sheet</p>
+                <span class="line"></span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<script src="js/apiAjax.js"></script>
+<script src="js/work.js"></script>
+</html>

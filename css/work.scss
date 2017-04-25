@@ -1,0 +1,146 @@
+.cow{
+  overflow: hidden;
+  &::after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+.col{
+  float: left;
+}
+@for $i from 1 through 12{
+  .d-#{$i}{
+    width:percentage($i/12);
+  }
+}
+$m-size:1600px;
+$s-size:1200px;
+@mixin onm{
+  @media screen and(max-width:$m-size) {
+    @content;
+  }
+}
+@mixin ons{
+  @media screen and(max-width:$s-size) {
+    @content;
+  }
+}
+.box{
+  min-height:100%;
+}
+.main1{
+  width:898px;
+  height:auto;
+  top:0;
+  margin:0 auto;
+  padding-top:200px;
+  position: relative;
+  z-index: 1000;
+  @include onm{
+    width:718px;
+    padding-top:160px;
+  }
+  .title{
+    width:100%;
+    height:81px;
+    background: url("../images/title.png") center no-repeat;
+    background-size: 100% 100%;
+    padding: 7px 9px 9px 8px;
+    box-sizing: border-box;
+    li{
+      line-height:65px;
+      text-align: center;
+      border-left:1px solid #606060;
+      box-sizing: border-box;
+      font-size: 18px;
+      font-weight: bold;
+      @include onm{
+        font-size: 16px;
+      }
+      &:nth-child(1){
+        border:none;
+      }
+    }
+  }
+  .contain-box{
+    width:100%;
+    height:auto;
+    .contain1{
+      width:100%;
+      height:365px;
+      background: url("../images/contain.png") center no-repeat;
+      background-size: 100% 100%;
+      padding:7px 9px 9px 8px;
+      box-sizing: border-box;
+      &>li{
+        border-right:1px solid #606060;
+      }
+      li{
+        text-align: center;
+        min-height:64px;
+        line-height:64px;
+        border-bottom:1px solid #606060;
+        box-sizing: border-box;
+        font-weight: bold;
+        ul{
+          width:100%;
+        }
+        &.b{
+          height:90px;
+          line-height: 45px;
+          border-bottom:none;
+        }
+        &.right-no{
+          border-right:0;
+        }
+        &.bottom-no{
+          border-bottom:none;
+        }
+        input{
+          border-bottom:1px solid #606060;
+          text-align: center;
+          line-height: 26px;
+          font-size: 16px;
+        }
+        .xiao{
+          width:32px;
+        }
+        .da{
+          width:64px;
+        }
+        p{
+          input{
+            width:20px;
+            height:20px;
+            cursor: pointer;
+            -webkit-transform: translate3d(0,3px,0);
+            -moz-transform: translate3d(0,3px,0);
+            -ms-transform: translate3d(0,3px,0);
+            -o-transform: translate3d(0,3px,0);
+            transform: translate3d(0,3px,0);
+            @include onm{
+              width:15px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .add{
+    width:51px;
+    height:51px;
+    cursor: pointer;
+    position: relative;
+    left:94%;
+    background: url("../images/add.png") center no-repeat;
+    background-size: 100% 100%;
+  }
+  .guide{
+    bottom: -60px;
+    padding-bottom: 30px;
+  }
+
+
+}
